@@ -3,6 +3,8 @@ HIT SYMPHONY
 
 ## Mục tiêu dự án:
 Tạo web quản lý thành viên CLB
+Giải quyết vấn đề thiếu không gian chuyên nghiệp trong việc quản lý thành viên cũng như giao tiếp sau buổi học
+Hướng tới các thành viên trong câu lạc bộ
 
 ## Chức năng chính:
 - Tài khoản và xác thực
