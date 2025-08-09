@@ -35,31 +35,29 @@ HIT SYMPHONY
 - Cloudiary
 
 ## Cấu trúc thư mục
-.
-└── src
-└── main
-├── java
-│ └── my_computer.backendsymphony
-│ ├── base # Chứa các lớp cơ sở (Base classes)
-│ ├── config # Các lớp cấu hình cho ứng dụng
-│ ├── constant # Các hằng số và Enum
-│ ├── controller # Tầng xử lý request (API Endpoints)
-│ ├── domain # Chứa các đối tượng dữ liệu
-│ │ ├── dto # Data Transfer Objects
-│ │ ├── entity # Các thực thể ánh xạ CSDL (JPA Entities)
-│ │ └── mapper # Ánh xạ giữa Entity và DTO (MapStruct)
-│ ├── exception # Xử lý ngoại lệ tùy chỉnh
-│ ├── repository # Tầng truy cập dữ liệu (Data Access Layer)
-│ ├── security # Cấu hình bảo mật (Spring Security, JWT)
-│ ├── service # Tầng logic nghiệp vụ (Business Logic)
-│ │ ├── impl # Các lớp implement service interface
-│ │ └── ...Service # Các service interface
-│ ├── util # Các lớp tiện ích (helper methods)
-│ ├── websocket # Xử lý giao tiếp thời gian thực
-│ └── BackendSymphonyApplication.java # Điểm khởi chạy ứng dụng
-│
-└── resources # Chứa các file tài nguyên, cấu hình
-└── application.properties # File cấu hình chính của Spring Boot
+src/
+├── main/
+│ ├── java/com/example/hit_networking_base
+│ │ ├── base           # Các base dùng chung cho controller
+│ │ ├── config         # Cấu hình Cloudinary, JWT properties, OpenApi, Dotenv,...
+│ │ ├── constant       # Cấu hình các enum, url Constant
+│ │ ├── controller     # REST API Controller
+│ │ ├── domain
+│ │ │  ├── dto         # Data Transfer Object
+│ │ │  │  ├── request  # Dữ liệu nhận vào
+│ │ │  │  ├── response # Dữ liệu trả lại
+│ │ │  ├── entity      # Các entiry của ứng dựng
+│ │ │  ├── mapstruct   # Map dto với entity
+│ │ ├── exception      # Xử lý lỗi
+│ │ └── repository     # JPA Repository
+│ │ └── security       # Cấu hình security
+│ │ └── service        # Các hàm xử lý logic
+│ │ │  ├── impl        # Các thực hiện của các hàm xử lý logic
+│ │ └── util           # Cấu hình các hàm hỗ trợ
+│ └── resources/
+│    ├── application.properties
+.env
+
 ## Liên hệ hỗ trợ:
 ...
 
