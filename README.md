@@ -41,7 +41,6 @@ Nền tảng quản lý thành viên, lớp học và các hoạt động dành 
 
 ```bash
 git clone https://github.com/HIT-SYMPHONY/Backend-Symphony.git
-cd Backend-Symphony
 ```
 
 ### 3. Cấu hình
