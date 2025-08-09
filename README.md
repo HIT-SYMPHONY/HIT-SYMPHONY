@@ -68,6 +68,7 @@ HIT SYMPHONY
    git clone https://github.com/HIT-SYMPHONY/Backend-Symphony.git
    ```
 2. Cấu hình database
+   .Cấu hình trong file application.properties
    ```
     # CORE SERVER CONFIGURATION
     server.port=8080
@@ -103,7 +104,8 @@ HIT SYMPHONY
     cloudinary.api_key=API_KEY_CUA_BAN
     cloudinary.api_secret=API_SECRET_CUA_BAN
    ```
-
+4. Chạy chương trình
+   
 ## Giấy phép:
 MIT/GPL/...
 
