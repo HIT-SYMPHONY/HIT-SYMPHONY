@@ -115,6 +115,13 @@ HIT SYMPHONY
 3. Chạy chương trình
    - Ấn nút run trên thanh công cụ
    <img width="572" height="57" alt="image" src="https://github.com/user-attachments/assets/445e4214-e06e-42d4-9250-52b9ffcc2fab" />
+   
+## Xác thực và phân quyền:
+- Bearer Token
+- Quản lý Token
+    - AccessToken
+    - RefreshToken
+- Role-based access
 
 ## Cách đóng góp:
 - Đứng từ develop, tạo branch mới: git checkout -b feature/ten-tinh-nang
