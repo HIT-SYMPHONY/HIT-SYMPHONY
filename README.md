@@ -2,7 +2,7 @@
 
 ![Java](https://img.shields.io/badge/Java-17-blue)![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.x-brightgreen)![ReactJS](https://img.shields.io/badge/ReactJS-18.x-blue?logo=react)![MySQL](https://img.shields.io/badge/MySQL-8+-orange?logo=mysql)![License](https://img.shields.io/badge/license-MIT-green)
 
-Nền tảng quản lý thành viên, lớp học và các hoạt động dành cho Câu lạc bộ HIT. Dự án hướng tới việc cung cấp một không gian chuyên nghiệp để quản lý và giao tiếp, giải quyết các vấn đề thiếu hiệu quả trong việc quản lý thành viên cũng như tương tác sau các buổi học và sự kiện.
+Nền tảng quản lý thành viên, lớp học và các cuộc thi dành cho Câu lạc bộ HIT. Dự án hướng tới việc cung cấp một không gian chuyên nghiệp để quản lý và giao tiếp hiệu quả trong việc quản lý thành viên cũng như tương tác sau các buổi học và cuộc thi.
 
 ## ✨ Chức năng chính
 
