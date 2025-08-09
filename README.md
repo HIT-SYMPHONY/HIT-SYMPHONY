@@ -68,7 +68,7 @@ HIT SYMPHONY
    git clone https://github.com/HIT-SYMPHONY/Backend-Symphony.git
    ```
 2. Cấu hình database
-   .Cấu hình trong file application.properties
+   . Cấu hình trong file application.properties
    ```
     # CORE SERVER CONFIGURATION
     server.port=8080
