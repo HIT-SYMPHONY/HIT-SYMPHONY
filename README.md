@@ -70,39 +70,47 @@ HIT SYMPHONY
 2. Cấu hình database
    - Cấu hình trong file application.properties
    ```
-    # CORE SERVER CONFIGURATION
-    server.port=8080
-    
-    # DATABASE CONFIGURATION (MySQL)
+    spring.application.name=BackendSymphony
+
+    # DATABASE
     spring.datasource.url=jdbc:mysql://localhost:3306/backendsymphony_db?createDatabaseIfNotExist=true
     spring.datasource.username=root
     spring.datasource.password=MAT_KHAU_MYSQL_CUA_BAN
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     
-    # JPA / HIBERNATE CONFIGURATION
+    # JPA / HIBERNATE
+    spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
     spring.jpa.hibernate.ddl-auto=update
     spring.jpa.show-sql=true
-    spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
     
-    # ADMIN DEFAULT ACCOUNT
-    admin.username=admin
-    admin.password=admin123@
+    # JWT
+    jwt.secret=CHUOI_BI_MAT_MA_HOA_JWT_CUA_BAN
+    jwt.access.expiration_time=60
+    jwt.refresh.expiration_time=1440
     
-    # JWT CONFIGURATION
-    jwt.secret=dayLaChuoiBiMatSieuDaiSieuBaoMatDungDeMaHoaTokenJWT123456789
-    jwt.accessExpirationTime=86400000
-    jwt.refreshExpirationTime=604800000
-    
-    # EMAIL (SMTP) CONFIGURATION
-    spring.mail.host=smtp.gmail.com
-    spring.mail.port=587
-    spring.mail.username=EMAIL_CUA_BAN@gmail.com
-    spring.mail.password=MAT_KHAU_UNG_DUNG_GMAIL_CUA_BAN # (Lưu ý: Mật khẩu ứng dụng của Gmail)
-    
-    # CLOUDINARY CONFIGURATION
+    # CLOUDINARY
     cloudinary.cloud_name=TEN_CLOUD_CUA_BAN
     cloudinary.api_key=API_KEY_CUA_BAN
     cloudinary.api_secret=API_SECRET_CUA_BAN
+    
+    # EMAIL
+    spring.mail.host=smtp.gmail.com
+    spring.mail.port=587
+    spring.mail.username=EMAIL_GMAIL_CUA_BAN@gmail.com
+    spring.mail.password=MAT_KHAU_UNG_DUNG_GMAIL_CUA_BAN
+    spring.mail.properties.mail.smtp.auth=true
+    spring.mail.properties.mail.smtp.starttls.enable=true
+    
+    # CÁC CẤU HÌNH KHÁC
+    logging.level.org.springframework.security=DEBUG
+    spring.servlet.multipart.max-file-size=5MB
+    spring.servlet.multipart.max-request-size=10MB
+    spring.datasource.hikari.maximum-pool-size=10
+    spring.datasource.hikari.minimum-idle=5
+    spring.datasource.hikari.idle-timeout=30000
+    spring.datasource.hikari.max-lifetime=60000
+    spring.datasource.hikari.connection-timeout=20000
+    spring.datasource.hikari.pool-name=HikariCP-BackendSymphony
    ```
 4. Chạy chương trình
    
