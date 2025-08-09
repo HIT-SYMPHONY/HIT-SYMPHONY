@@ -62,8 +62,11 @@ HIT SYMPHONY
         └── resources                 # Chứa các file tài nguyên, cấu hình
             └── application.properties # File cấu hình chính của Spring Boot
 ```
-## Liên hệ hỗ trợ:
-...
+## Cách cài đặt
+1. Clone dự án
+   - git clone https://github.com/HIT-SYMPHONY/Backend-Symphony.git
+2. Cấu hình database
+   - 
 
 ## Giấy phép:
 MIT/GPL/...
