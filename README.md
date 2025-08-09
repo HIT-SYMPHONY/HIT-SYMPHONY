@@ -37,29 +37,29 @@ HIT SYMPHONY
 ## Cấu trúc thư mục
 .
 └── src
-    └── main
-        ├── java
-        │   └── my_computer.backendsymphony
-        │           ├── base          # Chứa các lớp cơ sở (Base classes)
-        │           ├── config        # Các lớp cấu hình cho ứng dụng
-        │           ├── constant      # Các hằng số và Enum
-        │           ├── controller    # Tầng xử lý request (API Endpoints)
-        │           ├── domain        # Chứa các đối tượng dữ liệu
-        │           │   ├── dto       # Data Transfer Objects
-        │           │   ├── entity    # Các thực thể ánh xạ CSDL (JPA Entities)
-        │           │   └── mapper    # Ánh xạ giữa Entity và DTO (MapStruct)
-        │           ├── exception     # Xử lý ngoại lệ tùy chỉnh
-        │           ├── repository    # Tầng truy cập dữ liệu (Data Access Layer)
-        │           ├── security      # Cấu hình bảo mật (Spring Security, JWT)
-        │           ├── service       # Tầng logic nghiệp vụ (Business Logic)
-        │           │   ├── impl      # Các lớp implement service interface
-        │           │   └── ...Service # Các service interface
-        │           ├── util          # Các lớp tiện ích (helper methods)
-        │           ├── websocket     # Xử lý giao tiếp thời gian thực
-        │           └── BackendSymphonyApplication.java # Điểm khởi chạy ứng dụng
-        │
-        └── resources                 # Chứa các file tài nguyên, cấu hình
-            └── application.properties # File cấu hình chính của Spring Boot
+└── main
+├── java
+│ └── my_computer.backendsymphony
+│ ├── base # Chứa các lớp cơ sở (Base classes)
+│ ├── config # Các lớp cấu hình cho ứng dụng
+│ ├── constant # Các hằng số và Enum
+│ ├── controller # Tầng xử lý request (API Endpoints)
+│ ├── domain # Chứa các đối tượng dữ liệu
+│ │ ├── dto # Data Transfer Objects
+│ │ ├── entity # Các thực thể ánh xạ CSDL (JPA Entities)
+│ │ └── mapper # Ánh xạ giữa Entity và DTO (MapStruct)
+│ ├── exception # Xử lý ngoại lệ tùy chỉnh
+│ ├── repository # Tầng truy cập dữ liệu (Data Access Layer)
+│ ├── security # Cấu hình bảo mật (Spring Security, JWT)
+│ ├── service # Tầng logic nghiệp vụ (Business Logic)
+│ │ ├── impl # Các lớp implement service interface
+│ │ └── ...Service # Các service interface
+│ ├── util # Các lớp tiện ích (helper methods)
+│ ├── websocket # Xử lý giao tiếp thời gian thực
+│ └── BackendSymphonyApplication.java # Điểm khởi chạy ứng dụng
+│
+└── resources # Chứa các file tài nguyên, cấu hình
+└── application.properties # File cấu hình chính của Spring Boot
 ## Liên hệ hỗ trợ:
 ...
 
