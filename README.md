@@ -98,7 +98,6 @@ spring.datasource.hikari.pool-name=HikariCP-BackendSymphony
 ```
 </details>
 
-> **❗ Lưu ý quan trọng**: Không bao giờ đưa file `application.properties` chứa thông tin nhạy cảm (mật khẩu, API key) lên repository công khai.
 
 ### 4. Chạy ứng dụng
 Mở dự án bằng IntelliJ IDEA, đợi Maven tải các thư viện, sau đó nhấn nút ▶️ **Run** trên thanh công cụ.
