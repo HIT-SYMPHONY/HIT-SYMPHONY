@@ -112,10 +112,9 @@ HIT SYMPHONY
     spring.datasource.hikari.connection-timeout=20000
     spring.datasource.hikari.pool-name=HikariCP-BackendSymphony
    ```
-4. Chạy chương trình
-   
-## Giấy phép:
-MIT/GPL/...
+3. Chạy chương trình
+   - Ấn nút run trên thanh công cụ
+   <img width="572" height="57" alt="image" src="https://github.com/user-attachments/assets/445e4214-e06e-42d4-9250-52b9ffcc2fab" />
 
 ## Cách đóng góp:
 - Đứng từ develop, tạo branch mới: git checkout -b feature/ten-tinh-nang
