@@ -7,37 +7,59 @@ HIT SYMPHONY
 - Hướng tới các thành viên trong câu lạc bộ
 
 ## Chức năng chính:
-- Tài khoản và xác thực
-- Quản lý lớp học và thành viên
-- Quản lý bài tập và kết quả học tập
-- Quản lý cuộc thi
+- Quản lý Xác thực và Tài khoản (Authentication)
+- Quản lý Người dùng (User Management)
+- Quản lý Lớp học (Classroom Management)
+- Quản lý Buổi học (Lesson Management)
+- Quản lý Bài tập & Tương tác (Post & Comment-Post)
+- Quản lý Cuộc thi (Competition Management)
+- Quản lý Bài dự thi (Competition Submission)
+- Quản lý Thông báo (Notification)
 
 ## Công nghệ sử dụng:
-- Frontend: ReactJS
-- Backend: SpringBoot
-- Cơ sở dữ liệu: MySQL
+- ReactJS
+- SpringBoot
+- Spring Security
+- Spring Data JPA
+- JWT
+- Postman
+- Cloudinary 
+- MySQL
+- Docker
 
-## Cách sử dụng:
-...
+## Yêu cầu hệ thống :
+- IDE: Intellij Community
+- Java: 17
+- Maven: 3.9+
+- MySQL: 8+
+- Cloudiary
 
-## 🛠️ Lỗi thường gặp & cách khắc phục
-
-| **Lỗi** | **Nguyên nhân** | **Cách khắc phục** |
-|--------|----------------|-------------------|
-| 🔑 **Không đăng nhập được** | Sai thông tin đăng nhập, tài khoản bị khóa hoặc chưa được cấp | Kiểm tra tài khoản trong hệ thống; nếu cần, admin cấp lại hoặc mở khóa |
-| ⚠️ **Không tạo được lớp học mới** | Trùng tên lớp hoặc thiếu thông tin bắt buộc | Kiểm tra xem tên lớp đã tồn tại chưa và nhập đầy đủ các trường |
-| 🚫 **Không thể nộp bài tập** | Quá hạn nộp hoặc thiếu tệp đính kèm | Kiểm tra thời hạn nộp bài và đảm bảo đã chọn tệp hợp lệ |
-| 🔄 **Không sửa được thông tin cá nhân** | Session hết hạn hoặc backend không phản hồi | Đăng nhập lại và kiểm tra kết nối backend |
-| 📅 **Thông báo lịch học không hiển thị** | Chưa có lịch học nào được tạo hoặc lỗi frontend | Kiểm tra dữ liệu backend và debug phần hiển thị lịch |
-| ❗ **Không tạo được tài khoản mới** | Trùng email hoặc thiếu thông tin đầu vào | Kiểm tra tính hợp lệ của email và điền đủ thông tin |
-| ❌ **Không xóa được lớp học** | Lớp học vẫn còn thành viên hoặc bài tập liên kết | Cần xoá hoặc chuyển thành viên, bài tập trước khi xoá lớp |
-| 🧑‍🤝‍🧑 **Không phân nhóm được** | Số lượng thành viên không hợp lệ hoặc nhóm đã đầy | Kiểm tra lại số lượng thành viên và giới hạn nhóm |
-| 🔒 **Lỗi phân quyền (403 Forbidden)** | Người dùng không có quyền truy cập chức năng đó | Kiểm tra lại role (vai trò) của tài khoản, cấu hình phân quyền backend |
-| 🔌 **Frontend không gọi được API** | Sai địa chỉ API hoặc backend chưa chạy | Kiểm tra biến môi trường (env) hoặc trạng thái server backend |
-| 🐞 **Lỗi dữ liệu không đồng bộ giữa frontend và backend** | Không reload dữ liệu sau thao tác tạo/xoá | Gọi lại API fetch dữ liệu sau mỗi thao tác hoặc dùng state management (Redux, Context) hợp lý |
-| 🧭 **Lỗi định tuyến (404 Not Found)** | Sai đường dẫn hoặc chưa khai báo route | Kiểm tra các route trong React Router hoặc Spring Controller |
-
-
+## Cấu trúc thư mục
+.
+└── src
+    └── main
+        ├── java
+        │   └── my_computer.backendsymphony
+        │           ├── base          # Chứa các lớp cơ sở (Base classes)
+        │           ├── config        # Các lớp cấu hình cho ứng dụng
+        │           ├── constant      # Các hằng số và Enum
+        │           ├── controller    # Tầng xử lý request (API Endpoints)
+        │           ├── domain        # Chứa các đối tượng dữ liệu
+        │           │   ├── dto       # Data Transfer Objects
+        │           │   ├── entity    # Các thực thể ánh xạ CSDL (JPA Entities)
+        │           │   └── mapper    # Ánh xạ giữa Entity và DTO (MapStruct)
+        │           ├── exception     # Xử lý ngoại lệ tùy chỉnh
+        │           ├── repository    # Tầng truy cập dữ liệu (Data Access Layer)
+        │           ├── security      # Cấu hình bảo mật (Spring Security, JWT)
+        │           ├── service       # Tầng logic nghiệp vụ (Business Logic)
+        │           │   ├── impl      # Các lớp implement service interface
+        │           │   └── ...Service # Các service interface
+        │           ├── util          # Các lớp tiện ích (helper methods)
+        │           ├── websocket     # Xử lý giao tiếp thời gian thực
+        │           └── BackendSymphonyApplication.java # Điểm khởi chạy ứng dụng
+        │
+        └── resources                 # Chứa các file tài nguyên, cấu hình
+            └── application.properties # File cấu hình chính của Spring Boot
 
 ## Liên hệ hỗ trợ:
 ...
@@ -45,11 +67,15 @@ HIT SYMPHONY
 ## Giấy phép:
 MIT/GPL/...
 
-## Các đóng góp:
-...
+## Cách đóng góp:
+- Đứng từ develop, tạo branch mới: git checkout -b feature/ten-tinh-nang
+- Commit thay đổi: git commit -m "feat: ten feature"
+- Push lên branch: git push origin feature/ten-tinh-nang
+- Tạo Pull Request
+- Sửa lỗi : git commit -m "fix/noi-dung-fix"
 
 ## Tài liệu thêm:
-- [Figma](...)
-- [Demo](...)
+- [Figma](https://www.figma.com/design/vI7ilYugZQZ8GUxwJtpq12/HIT---Symphony---Design?node-id=27-26&t=viIK8WCRXO19vGm2-0)
+- [Demo](http://159.223.49.56:5173/?fbclid=IwY2xjawMEOHNleHRuA2FlbQIxMQABHtzK8v0fkP2a6I5YLLXZsOrcbyj1gl2lhs7TCaZiAwm-VzOH7qKIT_hvIMTk_aem_fHSOiPdGqMYKNadEMss5LA)
 
 
