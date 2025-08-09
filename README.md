@@ -66,7 +66,6 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
 # JWT
-# Truy cập https://generate-random.org/encryption-key-generator để tạo chuỗi bí mật mạnh
 jwt.secret=CHUOI_BI_MAT_MA_HOA_JWT_CUA_BAN
 jwt.access.expiration_time=60
 jwt.refresh.expiration_time=1440
@@ -108,15 +107,27 @@ Mở dự án bằng IntelliJ IDEA, đợi Maven tải các thư viện, sau đ�
 ## 🤝 Hướng dẫn Đóng góp
 Chúng tôi hoan nghênh mọi đóng góp! Vui lòng tuân thủ quy trình dưới đây:
 
-1.  **Fork** repository này.
-2.  Clone fork của bạn về máy: `git clone https://github.com/TEN-CUA-BAN/Backend-Symphony.git`
-3.  Tạo một branch mới từ `develop`: `git checkout -b feature/ten-tinh-nang`
-4.  Thực hiện các thay đổi của bạn.
-5.  Commit với một thông điệp rõ ràng theo quy ước:
-    *   Tính năng mới: `git commit -m "feat: Mô tả tính năng"`
-    *   Sửa lỗi: `git commit -m "fix: Mô tả lỗi đã sửa"`
-6.  Đẩy branch của bạn lên fork: `git push origin feature/ten-tinh-nang`
-7.  Tạo một **Pull Request** từ fork của bạn vào branch `develop` của repository gốc.
+1.  **Tạo branch mới từ `develop`**:
+    ```bash
+    git checkout -b feature/ten-tinh-nang
+    ```
+
+2.  **Commit các thay đổi**: Sử dụng commit message theo quy ước.
+    *   Đối với tính năng mới:
+        ```bash
+        git commit -m "feat: ten feature"
+        ```
+    *   Đối với sửa lỗi:
+        ```bash
+        git commit -m "fix: noi-dung-fix"
+        ```
+
+3.  **Đẩy branch lên repository**:
+    ```bash
+    git push origin feature/ten-tinh-nang
+    ```
+
+4.  **Tạo Pull Request**
 
 ## 📂 Cấu trúc Thư mục
 <details>
