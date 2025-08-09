@@ -16,14 +16,14 @@ Nền tảng quản lý thành viên, lớp học và các cuộc thi dành cho 
 
 ## 🛠️ Công nghệ sử dụng
 
-| Hạng mục      | Công nghệ                                                |
-| :------------ | :------------------------------------------------------- |
-| **Backend**   | Spring Boot, Spring Security, Spring Data JPA, JWT       |
-| **Frontend**  | ReactJS                                                  |
-| **Database**  | MySQL                                                    |
-| **DevOps**    | Docker                                                   |
-| **Dịch vụ**   | Cloudinary (Lưu trữ ảnh)                                 |
-| **Công cụ**   | Maven, Postman, IntelliJ IDEA                            |
+| Hạng mục                  | Công nghệ                                                              |
+|:--------------------------|:-------------------------------------------------------------------------|
+| **Backend**               | Spring Boot, Spring Security (OAuth2), Spring WebSocket, Spring Mail, Bucket4j |
+| **Frontend**              | React.js                                                                 |
+| **Database**              | MySQL                                                                    |
+| **DevOps & CI/CD**        | Digital Ocean, Docker, Sonarqube                                         |
+| **Dịch vụ (Services)**    | Cloudinary (Lưu trữ ảnh)                                                 |
+| **Công cụ & Kiểm thử**     | Maven, JUnit, Postman, Figma                                             |
 
 ---
 
