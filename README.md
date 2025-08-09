@@ -69,55 +69,36 @@ HIT SYMPHONY
    ```
 2. Cấu hình database
    ```
-   # ===================================================================
     # CORE SERVER CONFIGURATION
-    # ===================================================================
     server.port=8080
     
-    # ===================================================================
     # DATABASE CONFIGURATION (MySQL)
-    # Thay thế các giá trị cho phù hợp với môi trường của bạn
-    # ===================================================================
     spring.datasource.url=jdbc:mysql://localhost:3306/backendsymphony_db?createDatabaseIfNotExist=true
     spring.datasource.username=root
     spring.datasource.password=MAT_KHAU_MYSQL_CUA_BAN
     spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
     
-    # ===================================================================
     # JPA / HIBERNATE CONFIGURATION
-    # ===================================================================
     spring.jpa.hibernate.ddl-auto=update
     spring.jpa.show-sql=true
     spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
     
-    # ===================================================================
-    # ADMIN DEFAULT ACCOUNT (Nếu có)
-    # ===================================================================
+    # ADMIN DEFAULT ACCOUNT
     admin.username=admin
     admin.password=admin123@
     
-    # ===================================================================
     # JWT CONFIGURATION
-    # ===================================================================
     jwt.secret=dayLaChuoiBiMatSieuDaiSieuBaoMatDungDeMaHoaTokenJWT123456789
-    # Thời gian hết hạn của Access Token (đơn vị: mili giây. Ví dụ: 1 ngày = 86400000)
     jwt.accessExpirationTime=86400000
-    # Thời gian hết hạn của Refresh Token (Ví dụ: 7 ngày = 604800000)
     jwt.refreshExpirationTime=604800000
     
-    # ===================================================================
     # EMAIL (SMTP) CONFIGURATION
-    # Điền thông tin máy chủ SMTP của bạn (ví dụ: Gmail)
-    # ===================================================================
     spring.mail.host=smtp.gmail.com
     spring.mail.port=587
     spring.mail.username=EMAIL_CUA_BAN@gmail.com
     spring.mail.password=MAT_KHAU_UNG_DUNG_GMAIL_CUA_BAN # (Lưu ý: Mật khẩu ứng dụng của Gmail)
     
-    # ===================================================================
     # CLOUDINARY CONFIGURATION
-    # Điền thông tin tài khoản Cloudinary của bạn
-    # ===================================================================
     cloudinary.cloud_name=TEN_CLOUD_CUA_BAN
     cloudinary.api_key=API_KEY_CUA_BAN
     cloudinary.api_secret=API_SECRET_CUA_BAN
