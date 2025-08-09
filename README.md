@@ -60,7 +60,6 @@ HIT SYMPHONY
         │
         └── resources                 # Chứa các file tài nguyên, cấu hình
             └── application.properties # File cấu hình chính của Spring Boot
-
 ## Liên hệ hỗ trợ:
 ...
 
