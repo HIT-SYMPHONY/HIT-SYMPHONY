@@ -64,8 +64,10 @@ HIT SYMPHONY
 ```
 ## Cách cài đặt
 1. Clone dự án
+   ```
    - git clone https://github.com/HIT-SYMPHONY/Backend-Symphony.git
-2. Cấu hình database
+   ```
+3. Cấu hình database
    - 
 
 ## Giấy phép:
